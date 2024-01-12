@@ -11,6 +11,9 @@ export default function Page() {
           <form action="https://formbold.com/s/oJKNe" method="POST">
             <div className="grid w-80 grid-rows-4 gap-1">
               <p className="font-bold text-gray-700">Join us</p>
+              <input type="text" name="Name" hidden />
+              <input type="text" name="LastName" hidden />
+              <input type="text" name="message" hidden />
               <input type="email" name="Email" className="h-10 w-full rounded border p-2 text-sm" placeholder="Your email" />
               <button type="submit" className="rounded bg-[#FD5E57] text-gray-50 hover:bg-gradient-to-r hover:from-[#FD5E57] hover:to-[#FC477E]">Subscribe to the newsletter</button>
             </div>
