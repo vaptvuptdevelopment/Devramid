@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='bg-green-100'>
+      <body className='bg-green-100 overflow-hidden'>
         <div className="p-2">
           <nav className="dark:bg-gray-800 font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 sm:items-baseline w-full">
             <div className="mb-2 sm:mb-0">
