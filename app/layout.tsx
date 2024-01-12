@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-<>
+    <html lang="en">
       <body className='bg-green-100'>
         <div className="p-2">
           <nav className="dark:bg-gray-800 font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 sm:items-baseline w-full">
@@ -30,13 +30,12 @@ export default function RootLayout({
         </div>
         {children}</body>
 
+      <footer className="dark:bg-gray-800 font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 sm:items-baseline w-full absolute bottom-0">
+        <p className="dark:text-gray-400">Devramid - Redefining Software Development through Pyramid Schemes and Cooperative Excellence. Join us on this exciting journey of innovation and collaboration!</p>
+        <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://devramid.vercel.app/" className="hover:underline" target="_blank">Devramid™</a>. All Rights Reserved.
+        </span>
+      </footer>
 
-        <footer className="dark:bg-gray-800 font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 sm:items-baseline w-full absolute bottom-0">
-          <p className="dark:text-gray-400">Devramid - Redefining Software Development through Pyramid Schemes and Cooperative Excellence. Join us on this exciting journey of innovation and collaboration!</p>
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://devramid.vercel.app/" className="hover:underline" target="_blank">Devramid™</a>. All Rights Reserved.
-          </span>
-        </footer>
-
-        </>
+    </html>
   )
 }
